@@ -1,18 +1,25 @@
+@font-face {
+  font-family: FleshAndBlood;
+  src: url("../assets/fonts/Fleshandblood.ttf");
+}
+
 .home-page {
   background-color: rgb(163, 160, 160);
   color: whitesmoke;
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
   min-height: calc(100vh - 50px);
-  background-image: url("../assets/pics/items/central-yharnam.jpg");
+  background-image: url("../assets/pics/home-page/central-yharnam.jpg");
   background-size: 100% 100%;
 
   section {
     padding-top: 10%;
-    padding-left: 40%;
+    padding-left: 30%;
 
     p {
       margin-bottom: 10px;
+      font-family: FleshAndBlood;
+      letter-spacing: 1px;
     }
   }
 }
