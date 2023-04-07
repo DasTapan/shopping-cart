@@ -1,0 +1,18 @@
+.home-page {
+  background-color: rgb(163, 160, 160);
+  color: whitesmoke;
+  font-size: 1.35rem;
+  font-weight: 700;
+  min-height: calc(100vh - 50px);
+  background-image: url("../assets/pics/items/central-yharnam.jpg");
+  background-size: 100% 100%;
+
+  section {
+    padding-top: 10%;
+    padding-left: 40%;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

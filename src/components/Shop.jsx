@@ -1,4 +1,15 @@
 import Card from "./Card";
+const catalog = [
+  {
+    id: 1,
+    name: "Saw Cleaver",
+    price: 19_999,
+    images: {
+      small: "",
+      big: "",
+    },
+  },
+];
 
 const Shop = () => {
   return (
