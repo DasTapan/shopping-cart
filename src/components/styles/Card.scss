@@ -12,5 +12,12 @@
 
   .counter {
     display: flex;
+
+    .increase,
+    .decrease {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
