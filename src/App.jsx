@@ -1,7 +1,20 @@
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import ErrorBoundary from "./ErrorBoundary";
+import Nav from "./components/Nav";
+import RouteSwitch from "./components/RouteSwitch";
+import "./App.scss";
 
 function App() {
-  return <div className="App">Jay Jagannath</div>;
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <ErrorBoundary>
+          <Nav />
+        </ErrorBoundary>
+        <RouteSwitch />
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
