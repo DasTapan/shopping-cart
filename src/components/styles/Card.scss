@@ -1,12 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 350px;
 
-  .img-box {
-    height: 200px;
-    width: 200px;
+  img {
     border: 1px solid red;
   }
 

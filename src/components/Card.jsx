@@ -15,7 +15,7 @@ const Counter = ({ value, handleIncrement, handleDecrement }) => {
   );
 };
 
-const Card = ({ img, name }) => {
+const Card = ({ imgSrc, name }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increase = () => {
@@ -27,8 +27,8 @@ const Card = ({ img, name }) => {
   };
   return (
     <div className="card">
-      <div className="img-box">item pic here</div>
-      <span>item name</span>
+      <img src={imgSrc} alt={name} />
+      <span>{name}</span>
       <Counter
         value={quantity}
         handleIncrement={increase}
