@@ -15,7 +15,7 @@ const Counter = ({ value, handleIncrement, handleDecrement }) => {
   );
 };
 
-const Card = ({ imgSrc, name, price }) => {
+const Card = ({ id, imgSrc, name, price, addToCart }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increase = () => {
@@ -26,12 +26,12 @@ const Card = ({ imgSrc, name, price }) => {
     if (quantity > 1) setQuantity(quantity - 1);
   };
 
-  const priceLocalized = new Intl.NumberFormat("en-IN", {
+  const INRupees = new Intl.NumberFormat("en-IN", {
     style: "currency",
     currency: "INR",
-  })
-    .format(price)
-    .slice(0, -3);
+  });
+
+  const priceLocalized = INRupees.format(price).slice(0, -3);
 
   return (
     <div className="card">
@@ -43,7 +43,9 @@ const Card = ({ imgSrc, name, price }) => {
         handleIncrement={increase}
         handleDecrement={decrease}
       />
-      <button className="add-to-cart">Add to Cart</button>
+      <button className="add-to-cart" onClick={() => addToCart(id)}>
+        Add to Cart
+      </button>
     </div>
   );
 };

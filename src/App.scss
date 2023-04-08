@@ -16,6 +16,10 @@ p {
   margin: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /**
   *  Use the default cursor in all browsers (opinionated).
 */

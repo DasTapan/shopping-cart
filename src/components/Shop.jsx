@@ -1,14 +1,15 @@
-import { catalog } from "./Catalog";
 import Card from "./Card";
 import "./styles/Shop.scss";
 
-const Shop = () => {
+const Shop = ({ catalog, addToCart }) => {
   const listedIItems = catalog.map((item) => (
     <Card
       key={item.id}
+      id={item.id}
       imgSrc={item.images.big}
       name={item.name}
       price={item.price}
+      addToCart={addToCart}
     />
   ));
 
