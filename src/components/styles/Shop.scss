@@ -9,8 +9,8 @@
   .card-container {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(5, 300px);
-    gap: 20px;
+    grid-template-rows: repeat(5, 335px);
+    gap: 15px;
     border: 5px solid green;
 
     .card {

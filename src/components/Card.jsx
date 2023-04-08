@@ -15,7 +15,7 @@ const Counter = ({ value, handleIncrement, handleDecrement }) => {
   );
 };
 
-const Card = ({ imgSrc, name }) => {
+const Card = ({ imgSrc, name, price }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increase = () => {
@@ -25,10 +25,19 @@ const Card = ({ imgSrc, name }) => {
   const decrease = () => {
     if (quantity > 1) setQuantity(quantity - 1);
   };
+
+  const priceLocalized = new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+  })
+    .format(price)
+    .slice(0, -3);
+
   return (
     <div className="card">
       <img src={imgSrc} alt={name} />
       <span>{name}</span>
+      <span>{priceLocalized}</span>
       <Counter
         value={quantity}
         handleIncrement={increase}

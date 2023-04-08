@@ -4,7 +4,12 @@ import "./styles/Shop.scss";
 
 const Shop = () => {
   const listedIItems = catalog.map((item) => (
-    <Card key={item.id} imgSrc={item.images.big} name={item.name} />
+    <Card
+      key={item.id}
+      imgSrc={item.images.big}
+      name={item.name}
+      price={item.price}
+    />
   ));
 
   return (

@@ -22,8 +22,8 @@ import holyMoonlightSwordIcon from "./assets/pics/items/holy-moonlight-sword-ico
 import hunterAxe from "./assets/pics/items/Hunter-Axe.png";
 import hunterAxeIcon from "./assets/pics/items/hunter-axe-icon.png";
 
-import kirkhammer from "./assets/pics/items/Beast-Claw.png";
-import kirkhammerIcon from "./assets/pics/items/beast-claw-icon.png";
+import kirkhammer from "./assets/pics/items/Kirkhammer.png";
+import kirkhammerIcon from "./assets/pics/items/kirkhammer-icon.png";
 
 import logariusWheel from "./assets/pics/items/Logarius-Wheel.png";
 import logariusWheelIcon from "./assets/pics/items/logarius-wheel-icon.png";
