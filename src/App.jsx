@@ -10,8 +10,13 @@ import "./App.scss";
 
 function App() {
   const [selectedItems, setSelectedItems] = useState({ ids: [], list: [] });
+  const [showCart, setShowCart] = useState(false);
 
-  const addItems = (id) => {
+  const generateCartItem = (id) => {
+    return catalog.find((item) => item.id === id);
+  };
+
+  const addItems = (id, amount) => {
     const cartItem = generateCartItem(id);
 
     setSelectedItems({
@@ -22,21 +27,18 @@ function App() {
           id: cartItem.id,
           name: cartItem.name,
           price: cartItem.price,
+          amount: amount,
           img: cartItem.images.small,
         },
       ],
     });
   };
 
-  const generateCartItem = (id) => {
-    return catalog.find((item) => item.id === id);
-  };
-
   return (
     <BrowserRouter>
       <div className="App">
         <ErrorBoundary>
-          <Nav />
+          <Nav toggleCart={setShowCart} />
         </ErrorBoundary>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -44,8 +46,8 @@ function App() {
             path="/shop"
             element={<Shop catalog={catalog} addToCart={addItems} />}
           />
-          <Route path="/cart" element={<Cart />} />
         </Routes>
+        <Cart show={showCart} toggleCart={setShowCart} />
       </div>
     </BrowserRouter>
   );

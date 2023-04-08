@@ -43,7 +43,7 @@ const Card = ({ id, imgSrc, name, price, addToCart }) => {
         handleIncrement={increase}
         handleDecrement={decrease}
       />
-      <button className="add-to-cart" onClick={() => addToCart(id)}>
+      <button className="add-to-cart" onClick={() => addToCart(id, quantity)}>
         Add to Cart
       </button>
     </div>

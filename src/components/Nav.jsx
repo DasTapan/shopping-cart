@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./styles/Nav.scss";
 
-const Nav = () => {
+const Nav = ({ toggleCart }) => {
   return (
     <nav className="nav-bar">
       <ul className="nav-links">
@@ -16,7 +16,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link className="links" to="/cart">
+          <Link className="links" onClick={() => toggleCart(true)}>
             Cart
           </Link>
         </li>
