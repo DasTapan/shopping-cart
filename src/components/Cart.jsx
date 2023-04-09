@@ -1,13 +1,27 @@
+import INRupees from "./CurrencyFormatter";
 import "./styles/Cart.scss";
 
-const Card = () => {
-  return <div className="card">Jay Jagannath</div>;
+const Card = ({ info }) => {
+  return (
+    <div className="card">
+      <img src={info.img} alt={info.name} />
+      <span>{info.name}</span>
+      <span>counter</span>
+      <button>remove</button>
+    </div>
+  );
 };
 
 const Cart = ({ show, toggleCart, items }) => {
   const totalItems = items.reduce((total, item) => {
     return total + item.amount;
   }, 0);
+
+  const grandTotal = items.reduce((total, item) => {
+    return total + item.price * item.amount;
+  }, 0);
+
+  const grandTotalInRupees = INRupees.format(grandTotal).slice(0, -3);
 
   return (
     <>
@@ -19,6 +33,7 @@ const Cart = ({ show, toggleCart, items }) => {
           {items.map((item) => (
             <Card key={item.id} info={item} />
           ))}
+          <span>Grand Total: {grandTotalInRupees}</span>
           <button>Checkout</button>
           <button onClick={() => toggleCart(false)}>Close</button>
         </div>

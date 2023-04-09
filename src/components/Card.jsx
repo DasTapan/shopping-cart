@@ -1,4 +1,5 @@
 import { useState } from "react";
+import INRupees from "./CurrencyFormatter";
 import "./styles/Card.scss";
 
 const Counter = ({ value, handleIncrement, handleDecrement }) => {
@@ -25,11 +26,6 @@ const Card = ({ id, imgSrc, name, price, addToCart }) => {
   const decrease = () => {
     if (quantity > 1) setQuantity(quantity - 1);
   };
-
-  const INRupees = new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-  });
 
   const priceLocalized = INRupees.format(price).slice(0, -3);
 
