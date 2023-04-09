@@ -34,6 +34,39 @@ function App() {
     });
   };
 
+  const alterItems = (val, id) => {
+    if (val > 0) {
+      const updatedItems = selectedItems.list.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            amount: item.amount + 1,
+          };
+        }
+        return item;
+      });
+      setSelectedItems({
+        ...selectedItems,
+        list: [...updatedItems],
+      });
+    }
+    if (val < 0) {
+      const updatedItems = selectedItems.list.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            amount: item.amount - 1,
+          };
+        }
+        return item;
+      });
+      setSelectedItems({
+        ...selectedItems,
+        list: [...updatedItems],
+      });
+    }
+  };
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -51,6 +84,7 @@ function App() {
           show={showCart}
           toggleCart={setShowCart}
           items={selectedItems.list}
+          alterCart={alterItems}
         />
       </div>
     </BrowserRouter>
