@@ -67,6 +67,14 @@ function App() {
     }
   };
 
+  const deleteItem = (id) => {
+    const updatedItems = selectedItems.list.filter((item) => item.id !== id);
+    setSelectedItems({
+      ...selectedItems,
+      list: [...updatedItems],
+    });
+  };
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -85,6 +93,7 @@ function App() {
           toggleCart={setShowCart}
           items={selectedItems.list}
           alterCart={alterItems}
+          deleteItem={deleteItem}
         />
       </div>
     </BrowserRouter>

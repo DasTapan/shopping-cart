@@ -27,18 +27,18 @@ const Counter = ({ value, id, alterCart }) => {
   );
 };
 
-const Card = ({ info, alterCart }) => {
+const Card = ({ info, alterCart, deleteItem }) => {
   return (
     <div className="card">
       <img src={info.img} alt={info.name} />
       <span>{info.name}</span>
       <Counter value={info.amount} id={info.id} alterCart={alterCart} />
-      <button>remove</button>
+      <button onClick={() => deleteItem(info.id)}>remove</button>
     </div>
   );
 };
 
-const Cart = ({ show, toggleCart, items, alterCart }) => {
+const Cart = ({ show, toggleCart, items, alterCart, deleteItem }) => {
   const totalItems = items.reduce((total, item) => {
     return total + item.amount;
   }, 0);
@@ -57,7 +57,12 @@ const Cart = ({ show, toggleCart, items, alterCart }) => {
             <span>{totalItems}</span> Items
           </div>
           {items.map((item) => (
-            <Card key={item.id} info={item} alterCart={alterCart} />
+            <Card
+              key={item.id}
+              info={item}
+              alterCart={alterCart}
+              deleteItem={deleteItem}
+            />
           ))}
           <span>Grand Total: {grandTotalInRupees}</span>
           <button>Checkout</button>
