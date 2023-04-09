@@ -47,7 +47,11 @@ function App() {
             element={<Shop catalog={catalog} addToCart={addItems} />}
           />
         </Routes>
-        <Cart show={showCart} toggleCart={setShowCart} />
+        <Cart
+          show={showCart}
+          toggleCart={setShowCart}
+          items={selectedItems.list}
+        />
       </div>
     </BrowserRouter>
   );
