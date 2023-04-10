@@ -1,19 +1,48 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
   img {
-    border: 1px solid red;
+    border-radius: 10px;
+  }
+
+  .item-name,
+  .item-price {
+    color: #f5f5f5;
+    font-weight: 600;
+  }
+
+  .add-to-cart {
+    border-radius: 5px;
+    padding: 3px;
   }
 
   .counter {
     display: flex;
+    justify-content: space-between;
+    width: 70px;
+    background-color: #bea8a8a6;
 
     .increase,
     .decrease {
+      background-color: #f5f5f5;
+      height: 18px;
+      border-radius: 2px;
+
       &:hover {
         cursor: pointer;
       }
+    }
+
+    .value {
+      background-color: #f5f5f5;
+      height: 18px;
+      width: 18px;
+      text-align: center;
+      padding-top: 1.5px;
+      font-size: 0.85rem;
     }
   }
 }

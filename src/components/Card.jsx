@@ -1,16 +1,26 @@
 import { useState } from "react";
 import INRupees from "./CurrencyFormatter";
 import "./styles/Card.scss";
+import sortDownIcon from "./assets/util-icons/sort-down.png";
+import sortUpIcon from "./assets/util-icons/sort-up.png";
 
 const Counter = ({ value, handleIncrement, handleDecrement }) => {
   return (
     <div className="counter">
       <div className="decrease" onClick={handleDecrement}>
-        &#8595;
+        <img
+          src={sortDownIcon}
+          alt="decrease"
+          style={{ height: "20px", width: "20px" }}
+        />
       </div>
       <div className="value">{value}</div>
       <div className="increase" onClick={handleIncrement}>
-        &#8593;
+        <img
+          src={sortUpIcon}
+          alt="increase"
+          style={{ height: "20px", width: "20px" }}
+        />
       </div>
     </div>
   );
@@ -32,8 +42,8 @@ const Card = ({ id, imgSrc, name, price, addToCart }) => {
   return (
     <div className="card">
       <img src={imgSrc} alt={name} />
-      <span>{name}</span>
-      <span>{priceLocalized}</span>
+      <span className="item-name">{name}</span>
+      <span className="item-price">{priceLocalized}</span>
       <Counter
         value={quantity}
         handleIncrement={increase}

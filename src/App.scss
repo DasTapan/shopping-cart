@@ -25,6 +25,10 @@ button:hover {
   cursor: pointer;
 }
 
+button {
+  font-family: inherit;
+}
+
 /**
   *  Use the default cursor in all browsers (opinionated).
 */
