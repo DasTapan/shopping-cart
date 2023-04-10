@@ -7,6 +7,10 @@
   background-color: #202060;
   font-weight: 600;
 
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
   .nav-links {
     display: flex;
     width: 350px;
