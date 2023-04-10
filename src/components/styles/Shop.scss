@@ -2,23 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(181, 178, 197);
+  background-color: #8c7158;
   min-height: calc(100vh - 50px);
   padding: 50px 0;
 
-  // background-image: url("../assets/pics/home-page/tomb-way.jpg");
-  background-image: url("../assets/pics/home-page/hunter-workshop.jpeg");
-  // background-size: 100% 100%;
-
   .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: repeat(5, 390px);
-    gap: 15px;
-    border: 5px solid green;
+    width: 1120px;
+
+    gap: 10px;
+    // border: 5px solid green;
 
     .card {
-      border: 2px solid red;
+      // border: 2px solid red;
     }
   }
 }

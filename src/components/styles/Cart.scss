@@ -4,7 +4,7 @@
   right: 0;
   width: 400px;
   min-height: calc(100vh - 50px);
-  background-color: greenyellow;
+  background-color: rgb(245, 245, 245);
   z-index: 2;
 
   display: flex;
@@ -13,13 +13,24 @@
 
   padding: 10px 0;
 
+  button {
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  img.item-icon {
+    border: 1.5px solid black;
+  }
+
   & > *:not(:last-child) {
     margin-bottom: 10px;
   }
 
   .banner {
-    border: 2px solid red;
+    // border: 2px solid red;
     padding: 5px;
+    font-weight: 700;
+    font-size: 1.25rem;
   }
 
   .card {
@@ -32,6 +43,17 @@
 
     & > *:not(:last-child) {
       margin-bottom: 5px;
+    }
+
+    .cart-item-name {
+      font-weight: 600;
+    }
+
+    .counter {
+      width: 55px;
+      .value {
+        background-color: rgb(153, 231, 37);
+      }
     }
   }
 }

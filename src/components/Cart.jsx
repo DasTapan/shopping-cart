@@ -1,5 +1,7 @@
 import INRupees from "./CurrencyFormatter";
 import "./styles/Cart.scss";
+import downArrow from "./assets/util-icons/sort-down.png";
+import upArrow from "./assets/util-icons/sort-up.png";
 
 const Counter = ({ value, id, alterCart }) => {
   return (
@@ -12,7 +14,11 @@ const Counter = ({ value, id, alterCart }) => {
           }
         }}
       >
-        &#8595;
+        <img
+          src={downArrow}
+          alt="decrease"
+          style={{ height: "15px", width: "15px" }}
+        />
       </div>
       <div className="value">{value}</div>
       <div
@@ -21,7 +27,11 @@ const Counter = ({ value, id, alterCart }) => {
           alterCart(1, id);
         }}
       >
-        &#8593;
+        <img
+          src={upArrow}
+          alt="increase"
+          style={{ height: "15px", width: "15px" }}
+        />
       </div>
     </div>
   );
@@ -30,10 +40,10 @@ const Counter = ({ value, id, alterCart }) => {
 const Card = ({ info, alterCart, deleteItem }) => {
   return (
     <div className="card">
-      <img src={info.img} alt={info.name} />
-      <span>{info.name}</span>
+      <img src={info.img} alt={info.name} className="item-icon" />
+      <span className="cart-item-name">{info.name}</span>
       <Counter value={info.amount} id={info.id} alterCart={alterCart} />
-      <button onClick={() => deleteItem(info.id)}>remove</button>
+      <button onClick={() => deleteItem(info.id)}>Remove</button>
     </div>
   );
 };

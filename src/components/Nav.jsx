@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "./styles/Nav.scss";
 
-const Nav = ({ toggleCart }) => {
+const val = 9;
+
+const Nav = ({ toggleCart, totalItems }) => {
   return (
     <nav className="nav-bar">
       <ul className="nav-links">
@@ -16,7 +18,11 @@ const Nav = ({ toggleCart }) => {
           </Link>
         </li>
         <li>
-          <Link className="links" onClick={() => toggleCart(true)}>
+          <Link
+            className="links to-cart"
+            onClick={() => toggleCart(true)}
+            data-count={totalItems}
+          >
             Cart
           </Link>
         </li>
@@ -26,3 +32,4 @@ const Nav = ({ toggleCart }) => {
 };
 
 export default Nav;
+export { val };

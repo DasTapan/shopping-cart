@@ -79,7 +79,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <ErrorBoundary>
-          <Nav toggleCart={setShowCart} />
+          <Nav
+            toggleCart={setShowCart}
+            totalItems={selectedItems.list.length}
+          />
         </ErrorBoundary>
         <Routes>
           <Route path="/" element={<Home />} />
