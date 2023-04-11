@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -76,7 +76,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <ErrorBoundary>
           <Nav
@@ -99,7 +99,7 @@ function App() {
           deleteItem={deleteItem}
         />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
