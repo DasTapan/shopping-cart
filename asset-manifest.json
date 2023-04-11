@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.1294090a.css",
+    "main.js": "/shopping-cart/static/js/main.1bc7a7fa.js",
+    "static/media/central-yharnam.jpg": "/shopping-cart/static/media/central-yharnam.e0d7fe52c524ce1b39af.jpg",
+    "static/media/Logarius-Wheel.png": "/shopping-cart/static/media/Logarius-Wheel.7d998c3332395741bf6f.png",
+    "static/media/Whirligig-Saw.png": "/shopping-cart/static/media/Whirligig-Saw.eced149da79d4e0ebcba.png",
+    "static/media/Kirkhammer.png": "/shopping-cart/static/media/Kirkhammer.fd9115c1093bc60ee421.png",
+    "static/media/Saw-Cleaver.png": "/shopping-cart/static/media/Saw-Cleaver.8bfad6ce3777e01d64bf.png",
+    "static/media/Burial-Blade.png": "/shopping-cart/static/media/Burial-Blade.c0cf1bc25e8bd6f3affa.png",
+    "static/media/Ludwig-Holy-Blade.png": "/shopping-cart/static/media/Ludwig-Holy-Blade.cf64e34f197af5500aed.png",
+    "static/media/Saw-Spear.png": "/shopping-cart/static/media/Saw-Spear.c366182eb080b9a13fc1.png",
+    "static/media/Stake-Driver.png": "/shopping-cart/static/media/Stake-Driver.3fa3e74d05ef64c8d124.png",
+    "static/media/Beast-Claw.png": "/shopping-cart/static/media/Beast-Claw.96dd5aeb9710ddc0af20.png",
+    "static/media/Bloodletter.png": "/shopping-cart/static/media/Bloodletter.e2b00afca4c6d49cbc41.png",
+    "static/media/Chikage.png": "/shopping-cart/static/media/Chikage.0dcc6876bb39e3350c0a.png",
+    "static/media/Hunter-Axe.png": "/shopping-cart/static/media/Hunter-Axe.2f6650ca62b5e0ab17e3.png",
+    "static/media/Reiterpallasch.png": "/shopping-cart/static/media/Reiterpallasch.b910b8410ff5758151a2.png",
+    "static/media/Beast-Cutter.png": "/shopping-cart/static/media/Beast-Cutter.9c39a6a9c6b7647481c8.png",
+    "static/media/Rifle-Spear.png": "/shopping-cart/static/media/Rifle-Spear.917734a913718a6842a8.png",
+    "static/media/Tonitrus.png": "/shopping-cart/static/media/Tonitrus.0cb7e8d031ea1566ddec.png",
+    "static/media/Blade-of-Mercy.png": "/shopping-cart/static/media/Blade-of-Mercy.c9726efefc216a8c0c6b.png",
+    "static/media/Holy-Moonlight-Sword.png": "/shopping-cart/static/media/Holy-Moonlight-Sword.ad49560cb87b101c6335.png",
+    "static/media/Threaded-Cane.png": "/shopping-cart/static/media/Threaded-Cane.0107e138b57f1e2c682f.png",
+    "static/media/Rakuyo.png": "/shopping-cart/static/media/Rakuyo.56165b02b28c1fa0c7b1.png",
+    "static/media/Fleshandblood.ttf": "/shopping-cart/static/media/Fleshandblood.43b045936a3f6862e534.ttf",
+    "index.html": "/shopping-cart/index.html",
+    "main.1294090a.css.map": "/shopping-cart/static/css/main.1294090a.css.map",
+    "main.1bc7a7fa.js.map": "/shopping-cart/static/js/main.1bc7a7fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1294090a.css",
+    "static/js/main.1bc7a7fa.js"
+  ]
+}
