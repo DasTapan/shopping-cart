@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.1294090a.css",
+    "main.css": "/shopping-cart/static/css/main.6c00b03a.css",
     "main.js": "/shopping-cart/static/js/main.1bc7a7fa.js",
     "static/media/central-yharnam.jpg": "/shopping-cart/static/media/central-yharnam.e0d7fe52c524ce1b39af.jpg",
     "static/media/Logarius-Wheel.png": "/shopping-cart/static/media/Logarius-Wheel.7d998c3332395741bf6f.png",
@@ -25,11 +25,11 @@
     "static/media/Rakuyo.png": "/shopping-cart/static/media/Rakuyo.56165b02b28c1fa0c7b1.png",
     "static/media/Fleshandblood.ttf": "/shopping-cart/static/media/Fleshandblood.43b045936a3f6862e534.ttf",
     "index.html": "/shopping-cart/index.html",
-    "main.1294090a.css.map": "/shopping-cart/static/css/main.1294090a.css.map",
+    "main.6c00b03a.css.map": "/shopping-cart/static/css/main.6c00b03a.css.map",
     "main.1bc7a7fa.js.map": "/shopping-cart/static/js/main.1bc7a7fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.1294090a.css",
+    "static/css/main.6c00b03a.css",
     "static/js/main.1bc7a7fa.js"
   ]
 }
